@@ -5,9 +5,9 @@
   <subtitle>mmx0071的个人博客</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://github.com/mmx0071/mmx0071-mmx0071.github.io/"/>
-  <updated>2019-11-08T11:15:47.711Z</updated>
-  <id>https://github.com/mmx0071/mmx0071-mmx0071.github.io/</id>
+  <link href="https://github.com/mmx0071/mmx0071.github.io/"/>
+  <updated>2019-11-10T08:04:20.170Z</updated>
+  <id>https://github.com/mmx0071/mmx0071.github.io/</id>
   
   <author>
     <name>Mmx0071</name>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://github.com/mmx0071/mmx0071-mmx0071.github.io/2019/11/08/hello-world/"/>
-    <id>https://github.com/mmx0071/mmx0071-mmx0071.github.io/2019/11/08/hello-world/</id>
-    <published>2019-11-08T11:15:47.710Z</published>
-    <updated>2019-11-08T11:15:47.711Z</updated>
+    <title>自书</title>
+    <link href="https://github.com/mmx0071/mmx0071.github.io/2019/11/10/zi-shu/"/>
+    <id>https://github.com/mmx0071/mmx0071.github.io/2019/11/10/zi-shu/</id>
+    <published>2019-11-10T06:44:13.617Z</published>
+    <updated>2019-11-10T08:04:20.170Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,32 @@
       
         
         
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+          &lt;p&gt;正式开始步入Python的学习，在这里会写一些学习上的内容，主要是虚拟机的使用，Python学习，以及算法一类的知识。&lt;/p&gt;
+
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Python继承中的一些问题</title>
+    <link href="https://github.com/mmx0071/mmx0071.github.io/2019/11/08/python-duo-ji-cheng-de-xiao-jie-shi/"/>
+    <id>https://github.com/mmx0071/mmx0071.github.io/2019/11/08/python-duo-ji-cheng-de-xiao-jie-shi/</id>
+    <published>2019-11-08T11:15:47.710Z</published>
+    <updated>2019-11-10T08:05:06.551Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;在学习Python的时候,其面对对象的三大特性分别为封装，继承，多态。继承又分为多继承以及多层继承，多继承：&lt;/p&gt;
+&lt;pre class=&quot; language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span
         
       
     
