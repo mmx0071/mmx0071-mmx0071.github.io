@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/mmx0071/mmx0071.github.io/"/>
-  <updated>2019-11-10T08:04:20.170Z</updated>
+  <updated>2019-11-13T01:30:13.107Z</updated>
   <id>https://github.com/mmx0071/mmx0071.github.io/</id>
   
   <author>
@@ -15,6 +15,55 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>虚拟机的目录及作用</title>
+    <link href="https://github.com/mmx0071/mmx0071.github.io/2019/11/13/xu-ni-ji-de-mu-lu-ji-zuo-yong/"/>
+    <id>https://github.com/mmx0071/mmx0071.github.io/2019/11/13/xu-ni-ji-de-mu-lu-ji-zuo-yong/</id>
+    <published>2019-11-13T01:26:14.177Z</published>
+    <updated>2019-11-13T01:30:13.107Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;· root — 启动&lt;a href=&quot;http://linux-wiki.cn/wiki/Linux&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Linux&lt;/a&gt;时使用的一些核心文件。如操作系统&lt;a
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>虚拟机的常规指令</title>
+    <link href="https://github.com/mmx0071/mmx0071.github.io/2019/11/13/xu-ni-ji-de-chang-gui-zhi-ling/"/>
+    <id>https://github.com/mmx0071/mmx0071.github.io/2019/11/13/xu-ni-ji-de-chang-gui-zhi-ling/</id>
+    <published>2019-11-13T01:22:13.628Z</published>
+    <updated>2019-11-13T01:25:33.643Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;strong&gt;常用指令&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;ls　　        显示文件或目录&lt;/p&gt;
+&lt;p&gt;​     -l           列出文件详细信息l(list)&lt;/p&gt;
+&lt;p&gt;​     -a         
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>自书</title>
