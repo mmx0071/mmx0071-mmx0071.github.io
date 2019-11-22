@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/mmx0071/mmx0071.github.io/"/>
-  <updated>2019-11-13T01:30:13.107Z</updated>
+  <updated>2019-11-22T12:10:54.877Z</updated>
   <id>https://github.com/mmx0071/mmx0071.github.io/</id>
   
   <author>
@@ -15,6 +15,103 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MySQL的连接查询的一个注意点</title>
+    <link href="https://github.com/mmx0071/mmx0071.github.io/2019/11/22/mysql-de-lian-jie-cha-xun-de-yi-ge-zhu-yi-dian/"/>
+    <id>https://github.com/mmx0071/mmx0071.github.io/2019/11/22/mysql-de-lian-jie-cha-xun-de-yi-ge-zhu-yi-dian/</id>
+    <published>2019-11-22T11:47:51.530Z</published>
+    <updated>2019-11-22T12:10:54.877Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;在MySQL中的查找方法最为多样，在这里大家需要注意连接查询中可能会犯得错误，在链接查询中共有4种，分为内查询（inner join）将多个表通过on确定连接关系，缺点是无对应关系的元素会被省略、外查询，其中外查询又分为左连接查询（left
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>python中实现多线程的方式</title>
+    <link href="https://github.com/mmx0071/mmx0071.github.io/2019/11/16/python-zhong-shi-xian-duo-xian-cheng-de-fang-shi/"/>
+    <id>https://github.com/mmx0071/mmx0071.github.io/2019/11/16/python-zhong-shi-xian-duo-xian-cheng-de-fang-shi/</id>
+    <published>2019-11-16T12:47:54.229Z</published>
+    <updated>2019-11-22T12:17:05.771Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;在Python中要想实现多任务的执行一共可以分为三种情况&lt;/p&gt;
+&lt;p&gt;1.并发&lt;/p&gt;
+&lt;p&gt;对于并发，CPU并不是同时在执行多个程序，他是在一个程序的执行过程中跳转到另一个程序执行，由于CPU的跳转速度过快，所以我们看到的实际画面就如同多个任务在被同时执行&lt;/p&gt;
+&lt;p
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>算法优化的重要性</title>
+    <link href="https://github.com/mmx0071/mmx0071.github.io/2019/11/14/suan-fa-you-hua-de-chong-yao-xing/"/>
+    <id>https://github.com/mmx0071/mmx0071.github.io/2019/11/14/suan-fa-you-hua-de-chong-yao-xing/</id>
+    <published>2019-11-14T12:26:38.150Z</published>
+    <updated>2019-11-22T12:12:56.954Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;为什么要学习算法？学习了算法对我们有什么好处？&lt;/p&gt;
+&lt;p&gt;1.算法是数据结构的进阶，学习算法可以帮助我们更加的了解数据结构&lt;br&gt;2.在目前，计算机的性能不断的提高，许多的复杂计算可以在很短的时间内计算出来，但是在某些问题上，计算机的性能也会由于算法的优劣而丧失优势，比
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>软硬链接和cp的差别</title>
+    <link href="https://github.com/mmx0071/mmx0071.github.io/2019/11/14/ruan-ying-lian-jie-he-cp-de-chai-bie/"/>
+    <id>https://github.com/mmx0071/mmx0071.github.io/2019/11/14/ruan-ying-lian-jie-he-cp-de-chai-bie/</id>
+    <published>2019-11-14T11:18:58.040Z</published>
+    <updated>2019-11-14T11:35:51.139Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;在虚拟机中，如果一个文件或者目录处于非常底部，在进行寻找的时候会很繁琐，此时一般会使用软链接或者硬链接来解决此类问题。软链接：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ln -s &amp;#39;目标文件或者目录（推荐使用绝对路径）&amp;#39; 
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>虚拟机的目录及作用</title>

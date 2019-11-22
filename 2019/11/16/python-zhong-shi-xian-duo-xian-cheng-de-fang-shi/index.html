@@ -4,9 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="自书, mmx0071的个人博客">
-    <meta name="description" content="正式开始步入Python的学习，在这里会写一些学习上的内容，主要是虚拟机的使用，Python学习，以及算法一类的知识。
-">
+    <meta name="keywords" content="python中实现多线程的方式, mmx0071的个人博客">
+    <meta name="description" content="在Python中要想实现多任务的执行一共可以分为三种情况
+1.并发
+对于并发，CPU并不是同时在执行多个程序，他是在一个程序的执行过程中跳转到另一个程序执行，由于CPU的跳转速度过快，所以我们看到的实际画面就如同多个任务在被同时执行
+2.并">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +16,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>自书 | mmx0071的个人博客</title>
+    <title>python中实现多线程的方式 | mmx0071的个人博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -241,13 +243,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        自书
+                        python中实现多线程的方式
                     </div>
                 </div>
             </div>
@@ -282,21 +284,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-11-10
+                    2019-11-16
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2019-11-10
+                    2019-11-22
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    44
+                    256
                 </div>
                 
 
@@ -314,7 +316,14 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>正式开始步入Python的学习，在这里会写一些学习上的内容，主要是虚拟机的使用，Python学习，以及算法一类的知识。</p>
+                <p>在Python中要想实现多任务的执行一共可以分为三种情况</p>
+<p>1.并发</p>
+<p>对于并发，CPU并不是同时在执行多个程序，他是在一个程序的执行过程中跳转到另一个程序执行，由于CPU的跳转速度过快，所以我们看到的实际画面就如同多个任务在被同时执行</p>
+<p>2.并行</p>
+<p>通过一些CPU的特性，我们可以使用一些方法，让一个CPU同时运作多个任务，这也就是多进程，多线程的出现</p>
+<p>3.协程</p>
+<p>协程是应用了生成器yield的特性，通过yield来实现多线程</p>
+<p>在一个程序中，虽然可以通过增加多个线程来完成多个任务，但在编写代码的时候需要我们尽量的减少进程与线程，要记住主线程也可以在子线程开启时完成任务，将线程减少至一个也能提高程序的效率。</p>
 
             </div>
             <hr/>
@@ -340,7 +349,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/mmx0071/mmx0071.github.io/2019/11/10/zi-shu/">https://github.com/mmx0071/mmx0071.github.io/2019/11/10/zi-shu/</a>
+                    <a href="https://github.com/mmx0071/mmx0071.github.io/2019/11/16/python-zhong-shi-xian-duo-xian-cheng-de-fang-shi/">https://github.com/mmx0071/mmx0071.github.io/2019/11/16/python-zhong-shi-xian-duo-xian-cheng-de-fang-shi/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -420,28 +429,24 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/11/13/xu-ni-ji-de-chang-gui-zhi-ling/">
+                <a href="/2019/11/22/mysql-de-lian-jie-cha-xun-de-yi-ge-zhu-yi-dian/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="虚拟机的常规指令">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="MySQL的连接查询的一个注意点">
                         
-                        <span class="card-title">虚拟机的常规指令</span>
+                        <span class="card-title">MySQL的连接查询的一个注意点</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            常用指令
-ls　　        显示文件或目录
-​     -l           列出文件详细信息l(list)
-​     -a          列出当前目录下所有文件及目录，包括隐藏的a(all)
-mkdir         创
+                            在MySQL中的查找方法最为多样，在这里大家需要注意连接查询中可能会犯得错误，在链接查询中共有4种，分为内查询（inner join）将多个表通过on确定连接关系，缺点是无对应关系的元素会被省略、外查询，其中外查询又分为左连接查询（left
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-11-13
+                            <i class="far fa-clock fa-fw icon-date"></i>2019-11-22
                         </span>
                         <span class="publish-author">
                             
@@ -461,29 +466,25 @@ mkdir         创
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/11/08/python-duo-ji-cheng-de-xiao-jie-shi/">
+                <a href="/2019/11/14/suan-fa-you-hua-de-chong-yao-xing/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="Python继承中的一些问题">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="算法优化的重要性">
                         
-                        <span class="card-title">Python继承中的一些问题</span>
+                        <span class="card-title">算法优化的重要性</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            在学习Python的时候,其面对对象的三大特性分别为封装，继承，多态。继承又分为多继承以及多层继承，多继承：
-class Father1(object):
-    def __init__(self):
-        pass
-
-clas
+                            为什么要学习算法？学习了算法对我们有什么好处？
+1.算法是数据结构的进阶，学习算法可以帮助我们更加的了解数据结构2.在目前，计算机的性能不断的提高，许多的复杂计算可以在很短的时间内计算出来，但是在某些问题上，计算机的性能也会由于算法的优劣而
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-11-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-11-14
                             </span>
                         <span class="publish-author">
                             

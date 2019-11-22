@@ -4,9 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="自书, mmx0071的个人博客">
-    <meta name="description" content="正式开始步入Python的学习，在这里会写一些学习上的内容，主要是虚拟机的使用，Python学习，以及算法一类的知识。
-">
+    <meta name="keywords" content="软硬链接和cp的差别, mmx0071的个人博客">
+    <meta name="description" content="在虚拟机中，如果一个文件或者目录处于非常底部，在进行寻找的时候会很繁琐，此时一般会使用软链接或者硬链接来解决此类问题。软链接：
+ln -s &amp;#39;目标文件或者目录（推荐使用绝对路径）&amp;#39;  &amp;#39;新产生的链接目录或文件的名字&amp;">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +14,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>自书 | mmx0071的个人博客</title>
+    <title>软硬链接和cp的差别 | mmx0071的个人博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -241,13 +241,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        自书
+                        软硬链接和cp的差别
                     </div>
                 </div>
             </div>
@@ -282,21 +282,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-11-10
+                    2019-11-14
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2019-11-10
+                    2019-11-14
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    44
+                    404
                 </div>
                 
 
@@ -314,7 +314,12 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>正式开始步入Python的学习，在这里会写一些学习上的内容，主要是虚拟机的使用，Python学习，以及算法一类的知识。</p>
+                <p>在虚拟机中，如果一个文件或者目录处于非常底部，在进行寻找的时候会很繁琐，此时一般会使用软链接或者硬链接来解决此类问题。软链接：</p>
+<pre><code>ln -s &#39;目标文件或者目录（推荐使用绝对路径）&#39;  &#39;新产生的链接目录或文件的名字&#39;</code></pre><p>硬链接：</p>
+<pre><code>ln  &#39;目标文件或者目录（推荐使用绝对路径）&#39;  &#39;新产生的链接目录或文件的名字&#39;</code></pre><p>cp：</p>
+<pre><code>cp &#39;目标文件或者目录&#39;  &#39;新产生的链接目录或文件的名字&#39;</code></pre><p>无特殊情况下，一般是使用软链接更加的方便，不论原文件或者文件夹有多大，软链接都是一个很小的文件或者文件夹，它就是相当与指向了原文件或者文件夹</p>
+<p>对于硬链接，则是在原文件或者文件夹指向文件内容的同时，再次创建一个新的文件指向该内容，由于两个文件指向的是相同的文件内容，在改变原文件的内容的时候，硬链接所创建的文件的内容也会同样的改变</p>
+<p>cp命令则是创建了新的引用，cp出来的文件和原文件内容是相同的，但两者是分别指向内容的，也就是cp在复制的时候也将其引用对象一并复制了，当对原有的文件内容进行修改的时候，新cp出来的文件不会发生改变</p>
 
             </div>
             <hr/>
@@ -340,7 +345,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/mmx0071/mmx0071.github.io/2019/11/10/zi-shu/">https://github.com/mmx0071/mmx0071.github.io/2019/11/10/zi-shu/</a>
+                    <a href="https://github.com/mmx0071/mmx0071.github.io/2019/11/14/ruan-ying-lian-jie-he-cp-de-chai-bie/">https://github.com/mmx0071/mmx0071.github.io/2019/11/14/ruan-ying-lian-jie-he-cp-de-chai-bie/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -420,28 +425,25 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/11/13/xu-ni-ji-de-chang-gui-zhi-ling/">
+                <a href="/2019/11/14/suan-fa-you-hua-de-chong-yao-xing/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="虚拟机的常规指令">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="算法优化的重要性">
                         
-                        <span class="card-title">虚拟机的常规指令</span>
+                        <span class="card-title">算法优化的重要性</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            常用指令
-ls　　        显示文件或目录
-​     -l           列出文件详细信息l(list)
-​     -a          列出当前目录下所有文件及目录，包括隐藏的a(all)
-mkdir         创
+                            为什么要学习算法？学习了算法对我们有什么好处？
+1.算法是数据结构的进阶，学习算法可以帮助我们更加的了解数据结构2.在目前，计算机的性能不断的提高，许多的复杂计算可以在很短的时间内计算出来，但是在某些问题上，计算机的性能也会由于算法的优劣而
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-11-13
+                            <i class="far fa-clock fa-fw icon-date"></i>2019-11-14
                         </span>
                         <span class="publish-author">
                             
@@ -461,29 +463,31 @@ mkdir         创
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/11/08/python-duo-ji-cheng-de-xiao-jie-shi/">
+                <a href="/2019/11/13/xu-ni-ji-de-mu-lu-ji-zuo-yong/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="Python继承中的一些问题">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="虚拟机的目录及作用">
                         
-                        <span class="card-title">Python继承中的一些问题</span>
+                        <span class="card-title">虚拟机的目录及作用</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            在学习Python的时候,其面对对象的三大特性分别为封装，继承，多态。继承又分为多继承以及多层继承，多继承：
-class Father1(object):
-    def __init__(self):
-        pass
-
-clas
+                            · root — 启动Linux时使用的一些核心文件。如操作系统内核、引导程序Grub等。
+· home — 存储普通用户的个人文件
+· ftp — 用户所有服务
+· httpd
+· samba
+· user1
+· user2
+· bin 
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-11-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-11-13
                             </span>
                         <span class="publish-author">
                             
