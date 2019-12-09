@@ -289,14 +289,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2019-11-22
+                    2019-11-26
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    347
+                    349
                 </div>
                 
 
@@ -330,12 +330,13 @@ m <span class="token operator">=</span> add<span class="token punctuation">(</sp
     m <span class="token operator">=</span> <span class="token number">0</span>
     n <span class="token operator">=</span> <span class="token number">1</span>
     <span class="token keyword">if</span> num <span class="token operator">&lt;=</span> <span class="token number">1</span><span class="token punctuation">:</span>
-        <span class="token keyword">return</span> <span class="token keyword">print</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span>
-    <span class="token keyword">while</span> num <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> num
+    <span class="token keyword">while</span> num <span class="token operator">></span> <span class="token number">1</span><span class="token punctuation">:</span>
         m<span class="token punctuation">,</span> n <span class="token operator">=</span> n<span class="token punctuation">,</span> m <span class="token operator">+</span> n
         num <span class="token operator">-=</span> <span class="token number">1</span>
-    <span class="token keyword">print</span><span class="token punctuation">(</span>m<span class="token punctuation">)</span>
- add<span class="token punctuation">(</span><span class="token number">128</span><span class="token punctuation">)</span>
+       <span class="token keyword">return</span> n
+res <span class="token operator">=</span>  add<span class="token punctuation">(</span><span class="token number">128</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span>
 </code></pre>
 <p>同样是计算128，递归计算需要的时间太长，有生之年都求不出来，而下面的算法却能秒算出来，孰优孰劣，一看便知</p>
 

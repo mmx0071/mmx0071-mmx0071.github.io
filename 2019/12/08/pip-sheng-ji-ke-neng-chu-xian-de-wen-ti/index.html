@@ -4,8 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="MySQL的连接查询的一个注意点, mmx0071的个人博客">
-    <meta name="description" content="在MySQL中的查找方法最为多样，在这里大家需要注意连接查询中可能会犯得错误，在链接查询中共有4种，分为内查询（inner join）将多个表通过on确定连接关系，缺点是无对应关系的元素会被省略、外查询，其中外查询又分为左连接查询（left">
+    <meta name="keywords" content="pip升级可能出现的问题, mmx0071的个人博客">
+    <meta name="description" content="Traceback (most recent call last):
+ File “/usr/local/bin/pip”, line 7, in     from pip import mainImportError: cannot im">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +14,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>MySQL的连接查询的一个注意点 | mmx0071的个人博客</title>
+    <title>pip升级可能出现的问题 | mmx0071的个人博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -240,13 +241,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        MySQL的连接查询的一个注意点
+                        pip升级可能出现的问题
                     </div>
                 </div>
             </div>
@@ -281,21 +282,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-11-22
+                    2019-12-08
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2019-11-22
+                    2019-12-08
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    356
+                    170
                 </div>
                 
 
@@ -313,10 +314,25 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>在MySQL中的查找方法最为多样，在这里大家需要注意连接查询中可能会犯得错误，在链接查询中共有4种，分为内查询（inner join）将多个表通过on确定连接关系，缺点是无对应关系的元素会被省略、外查询，其中外查询又分为左连接查询（left join）和右连接查询（right join）两种查询一般会使用左查询，因为右查询可以通过调换两表的位置，间接进行右查询，这样的查询可以将一个表作为主表，它的信息不会因为无对应关系而省略，而是用null来将空的关系填充。自连接查询则是将自己与自己多次连接，从而达到可以通过自己的内部的数据来查找数据。子连接查询就是将一个查询的结果作为自己的查询条件。</p>
-<p>在进行自连接的时候语句，比如查询每种类型中最贵的电脑信息：</p>
-<pre class=" language-sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> <span class="token number">a</span> <span class="token keyword">inner</span> <span class="token keyword">join</span> <span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token number">d</span><span class="token punctuation">,</span><span class="token function">max</span><span class="token punctuation">(</span>price<span class="token punctuation">)</span> <span class="token keyword">as</span> <span class="token number">b</span> <span class="token keyword">from</span> <span class="token number">a</span> <span class="token keyword">group</span> <span class="token keyword">by</span> <span class="token number">d</span><span class="token operator">=</span><span class="token string">'xxx'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> <span class="token number">c</span> <span class="token keyword">on</span> <span class="token number">a</span><span class="token punctuation">.</span><span class="token number">d</span><span class="token operator">=</span><span class="token number">c</span><span class="token punctuation">.</span><span class="token number">d</span> <span class="token operator">and</span> <span class="token number">a</span><span class="token punctuation">.</span>price<span class="token operator">=</span><span class="token number">c</span><span class="token punctuation">.</span><span class="token number">b</span><span class="token punctuation">;</span></code></pre>
-<p>在这个语句中max（price）必须要使用别名，在多个表格中时不能够直接使用c.max（price）这种格式，因为无法识别max函数到底是使用的那个的调用</p>
+                <p><strong>Traceback (most recent call last):</strong></p>
+<p> <strong>File “/usr/local/bin/pip”, line 7, in <module></strong><br>    <strong>from pip import main</strong><br><strong>ImportError: cannot import name main</strong></p>
+<p>在使用pip安装包时，可能会出现对pip的版本有要求，此时就要对pip进行升级的操作</p>
+<p>而升级后就会出现这样的错误</p>
+<p>解决办法如下：</p>
+<pre class=" language-python"><code class="language-python">将 <span class="token operator">/</span>usr<span class="token operator">/</span>local<span class="token operator">/</span>bin<span class="token operator">/</span>pip 文件中：（这里就是你pip报错的地址，随个人的地址）
+
+<span class="token keyword">from</span> pip <span class="token keyword">import</span>  main
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    sys<span class="token punctuation">.</span>exit<span class="token punctuation">(</span>main<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+改为：
+
+<span class="token keyword">from</span> pip <span class="token keyword">import</span> __main__
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    sys<span class="token punctuation">.</span>exit<span class="token punctuation">(</span>__main__<span class="token punctuation">.</span>_main<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<p>一般的话修改此处就能达到pip的正常使用，如果pip仍报错，还有一个地方可以被修改</p>
+<p>详情可以看<a href="https://blog.csdn.net/qq_38522539/article/details/80678412" target="_blank" rel="noopener">https://blog.csdn.net/qq_38522539/article/details/80678412</a></p>
 
             </div>
             <hr/>
@@ -342,7 +358,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/mmx0071/mmx0071.github.io/2019/11/22/mysql-de-lian-jie-cha-xun-de-yi-ge-zhu-yi-dian/">https://github.com/mmx0071/mmx0071.github.io/2019/11/22/mysql-de-lian-jie-cha-xun-de-yi-ge-zhu-yi-dian/</a>
+                    <a href="https://github.com/mmx0071/mmx0071.github.io/2019/12/08/pip-sheng-ji-ke-neng-chu-xian-de-wen-ti/">https://github.com/mmx0071/mmx0071.github.io/2019/12/08/pip-sheng-ji-ke-neng-chu-xian-de-wen-ti/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -418,9 +434,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2019/12/08/pip-sheng-ji-ke-neng-chu-xian-de-wen-ti/">
                     <div class="card-image">
@@ -439,9 +456,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-12-08
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-12-08
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -450,6 +467,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -460,27 +478,24 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/11/16/python-zhong-shi-xian-duo-xian-cheng-de-fang-shi/">
+                <a href="/2019/11/22/mysql-de-lian-jie-cha-xun-de-yi-ge-zhu-yi-dian/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="python中实现多线程的方式">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="MySQL的连接查询的一个注意点">
                         
-                        <span class="card-title">python中实现多线程的方式</span>
+                        <span class="card-title">MySQL的连接查询的一个注意点</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            在Python中要想实现多任务的执行一共可以分为三种情况
-1.并发
-对于并发，CPU并不是同时在执行多个程序，他是在一个程序的执行过程中跳转到另一个程序执行，由于CPU的跳转速度过快，所以我们看到的实际画面就如同多个任务在被同时执行
-2.并
+                            在MySQL中的查找方法最为多样，在这里大家需要注意连接查询中可能会犯得错误，在链接查询中共有4种，分为内查询（inner join）将多个表通过on确定连接关系，缺点是无对应关系的元素会被省略、外查询，其中外查询又分为左连接查询（left
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-11-16
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-11-22
                             </span>
                         <span class="publish-author">
                             

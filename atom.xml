@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/mmx0071/mmx0071.github.io/"/>
-  <updated>2019-11-22T12:10:54.877Z</updated>
+  <updated>2019-12-08T11:13:35.080Z</updated>
   <id>https://github.com/mmx0071/mmx0071.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>pip升级可能出现的问题</title>
+    <link href="https://github.com/mmx0071/mmx0071.github.io/2019/12/08/pip-sheng-ji-ke-neng-chu-xian-de-wen-ti/"/>
+    <id>https://github.com/mmx0071/mmx0071.github.io/2019/12/08/pip-sheng-ji-ke-neng-chu-xian-de-wen-ti/</id>
+    <published>2019-12-08T11:02:34.836Z</published>
+    <updated>2019-12-08T11:13:35.080Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;strong&gt;Traceback (most recent call last):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt; &lt;strong&gt;File “/usr/local/bin/pip”, line 7, in &lt;module&gt;&lt;/strong&gt;&lt;br&gt;   
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>MySQL的连接查询的一个注意点</title>
@@ -70,7 +94,7 @@
     <link href="https://github.com/mmx0071/mmx0071.github.io/2019/11/14/suan-fa-you-hua-de-chong-yao-xing/"/>
     <id>https://github.com/mmx0071/mmx0071.github.io/2019/11/14/suan-fa-you-hua-de-chong-yao-xing/</id>
     <published>2019-11-14T12:26:38.150Z</published>
-    <updated>2019-11-22T12:12:56.954Z</updated>
+    <updated>2019-11-26T02:15:23.863Z</updated>
     
     <summary type="html">
     
