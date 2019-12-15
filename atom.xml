@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/mmx0071/mmx0071.github.io/"/>
-  <updated>2019-12-08T11:13:35.080Z</updated>
+  <updated>2019-12-15T13:02:21.079Z</updated>
   <id>https://github.com/mmx0071/mmx0071.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>django中多个app进行管理时的注意点</title>
+    <link href="https://github.com/mmx0071/mmx0071.github.io/2019/12/15/django-zhong-duo-ge-app-jin-xing-guan-li-shi-de-zhu-yi-dian/"/>
+    <id>https://github.com/mmx0071/mmx0071.github.io/2019/12/15/django-zhong-duo-ge-app-jin-xing-guan-li-shi-de-zhu-yi-dian/</id>
+    <published>2019-12-15T12:49:32.001Z</published>
+    <updated>2019-12-15T13:02:21.079Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;在使用Django开发项目时，由于app会有很多，这样看起来会让项目显得杂乱无章，这时我们可以创建一个apps文件夹将所有的app管理起来，但此时这个地方就会报错&lt;/p&gt;
+&lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>pip升级可能出现的问题</title>
