@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/mmx0071/mmx0071.github.io/"/>
-  <updated>2019-12-15T13:02:21.079Z</updated>
+  <updated>2019-12-27T11:36:04.903Z</updated>
   <id>https://github.com/mmx0071/mmx0071.github.io/</id>
   
   <author>
@@ -15,6 +15,53 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Django中的ORM</title>
+    <link href="https://github.com/mmx0071/mmx0071.github.io/2019/12/27/django-zhong-de-orm/"/>
+    <id>https://github.com/mmx0071/mmx0071.github.io/2019/12/27/django-zhong-de-orm/</id>
+    <published>2019-12-27T10:24:49.968Z</published>
+    <updated>2019-12-27T11:36:04.903Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;现在比较普遍的程序设计模式一般为MVT，其中M指的便是Model，对于model我们一般是通过ORM框架来操作的，O是object，R是relation，M是mapping，即类对象数据库映射，通过类和类对象就能够操作它所对应的表格中的数据&lt;/p&gt;
+&lt;p&gt;在使用ORM的时候
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>celery的使用</title>
+    <link href="https://github.com/mmx0071/mmx0071.github.io/2019/12/27/celery-de-shi-yong/"/>
+    <id>https://github.com/mmx0071/mmx0071.github.io/2019/12/27/celery-de-shi-yong/</id>
+    <published>2019-12-27T10:00:27.925Z</published>
+    <updated>2019-12-27T10:24:21.635Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;celery是使用python语言制作出的分布式系统，主要是针对异步的任务进行处理，使用celery又被叫做生产者与消费者的设计模式，也就是说celery分为三个板块，分别为生产者，中间人，以及消费者，通俗的讲就是我们将需要异步处理的任务交给celery，这就形成了一个消费
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>django中多个app进行管理时的注意点</title>

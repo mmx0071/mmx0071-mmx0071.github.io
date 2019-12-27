@@ -4,10 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="django中多个app进行管理时的注意点, mmx0071的个人博客">
-    <meta name="description" content="在使用Django开发项目时，由于app会有很多，这样看起来会让项目显得杂乱无章，这时我们可以创建一个apps文件夹将所有的app管理起来，但此时这个地方就会报错
-
-原因是在你把app放在一个文件夹下后，include无法通过users.u">
+    <meta name="keywords" content="celery的使用, mmx0071的个人博客">
+    <meta name="description" content="celery是使用python语言制作出的分布式系统，主要是针对异步的任务进行处理，使用celery又被叫做生产者与消费者的设计模式，也就是说celery分为三个板块，分别为生产者，中间人，以及消费者，通俗的讲就是我们将需要异步处理的任务交">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -15,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>django中多个app进行管理时的注意点 | mmx0071的个人博客</title>
+    <title>celery的使用 | mmx0071的个人博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -247,13 +245,13 @@ left: 0;
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        django中多个app进行管理时的注意点
+                        celery的使用
                     </div>
                 </div>
             </div>
@@ -288,21 +286,21 @@ left: 0;
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-12-15
+                    2019-12-27
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2019-12-15
+                    2019-12-27
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    149
+                    464
                 </div>
                 
 
@@ -320,14 +318,24 @@ left: 0;
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>在使用Django开发项目时，由于app会有很多，这样看起来会让项目显得杂乱无章，这时我们可以创建一个apps文件夹将所有的app管理起来，但此时这个地方就会报错</p>
-<p><img src="C:%5CUsers%5CAdministrator%5CDesktop%5CQQ%E6%88%AA%E5%9B%BE20191215205549.jpg" alt="QQ截图20191215205549"></p>
-<p>原因是在你把app放在一个文件夹下后，include无法通过users.urls来找到模块，所以会报</p>
-<p><img src="C:%5CUsers%5CAdministrator%5CDesktop%5CQQ%E6%88%AA%E5%9B%BE20191215205816.jpg" alt="QQ截图20191215205816"></p>
-<p>可以通过sys的追加导包路径的功能来解决这个问题</p>
-<p>在settings.py下面添加导包路径</p>
-<pre class=" language-django"><code class="language-django">sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))</code></pre>
-<p>apps是总管子应用的文件夹名</p>
+                <p>celery是使用python语言制作出的分布式系统，主要是针对异步的任务进行处理，使用celery又被叫做生产者与消费者的设计模式，也就是说celery分为三个板块，分别为生产者，中间人，以及消费者，通俗的讲就是我们将需要异步处理的任务交给celery，这就形成了一个消费者，</p>
+<pre class=" language-python"><code class="language-python"><span class="token keyword">from</span> celery <span class="token keyword">import</span> Celery  <span class="token comment" spellcheck="true">#需要提前下载celery，并且使用celery的redis的版本必须超过3.xx的版本，redis的版本过低的话可以通过 pip uninstall redis 卸载，在通过 pip install redis 安装，安装后的版本即可满足需求</span>
+
+celery_app <span class="token operator">=</span> Celery<span class="token punctuation">(</span><span class="token string">'meiduo'</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 创建一个celery对象</span>
+
+celery_app<span class="token punctuation">.</span>config_from_object<span class="token punctuation">(</span><span class="token string">'celery_tasks.config'</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">#导入celery的配置文件， 一般为broker（中间人）的地址，即celery服务器的地址</span>
+
+celery_app<span class="token punctuation">.</span>autodiscover_tasks<span class="token punctuation">(</span><span class="token punctuation">[</span>任务名<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">#任务以列表的形式添加</span>
+</code></pre>
+<p>在使用celery的时候，可能会出现connection refused的错误，这个错误的出现有一定的偶然性，在我添加第二个任务交给celery执行的时候，就出现了这个错误，最终我添加第三个任务时，第二三都能成功，删除第三个任务后，错误消失，这之间第二个任务的代码并没有去改动。初步分析的结果是通过terminal开启celery，在关闭更新任务时，没有彻底的结束完，可以多使用几次ctrl + c来终止，也可以通过kill来杀死。</p>
+<p>celery的进程数是跟自身的CPU有关的，双核即为8， 四核即为16，但这个可以通过一些设置来更改</p>
+<pre class=" language-python"><code class="language-python">celery worker <span class="token operator">-</span>A proj <span class="token operator">-</span><span class="token operator">-</span>concurrency<span class="token operator">=</span>进程数</code></pre>
+<p>也可以在eventlet 模块的作用下将进程更改为协程</p>
+<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># 安装eventlet模块</span>
+$ pip install eventlet
+
+<span class="token comment" spellcheck="true"># 启用 Eventlet 池</span>
+$ celery <span class="token operator">-</span>A celery_tasks<span class="token punctuation">.</span>main worker <span class="token operator">-</span>l info <span class="token operator">-</span>P eventlet <span class="token operator">-</span>c <span class="token number">1000</span></code></pre>
 
             </div>
             <hr/>
@@ -353,7 +361,7 @@ left: 0;
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/mmx0071/mmx0071.github.io/2019/12/15/django-zhong-duo-ge-app-jin-xing-guan-li-shi-de-zhu-yi-dian/">https://github.com/mmx0071/mmx0071.github.io/2019/12/15/django-zhong-duo-ge-app-jin-xing-guan-li-shi-de-zhu-yi-dian/</a>
+                    <a href="https://github.com/mmx0071/mmx0071.github.io/2019/12/27/celery-de-shi-yong/">https://github.com/mmx0071/mmx0071.github.io/2019/12/27/celery-de-shi-yong/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -433,19 +441,19 @@ left: 0;
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/12/27/celery-de-shi-yong/">
+                <a href="/2019/12/27/django-zhong-de-orm/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="celery的使用">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="Django中的ORM">
                         
-                        <span class="card-title">celery的使用</span>
+                        <span class="card-title">Django中的ORM</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            celery是使用python语言制作出的分布式系统，主要是针对异步的任务进行处理，使用celery又被叫做生产者与消费者的设计模式，也就是说celery分为三个板块，分别为生产者，中间人，以及消费者，通俗的讲就是我们将需要异步处理的任务交
+                            现在比较普遍的程序设计模式一般为MVT，其中M指的便是Model，对于model我们一般是通过ORM框架来操作的，O是object，R是relation，M是mapping，即类对象数据库映射，通过类和类对象就能够操作它所对应的表格中的数据
                         
                     </div>
                     <div class="publish-info">
@@ -470,25 +478,26 @@ left: 0;
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/12/08/pip-sheng-ji-ke-neng-chu-xian-de-wen-ti/">
+                <a href="/2019/12/15/django-zhong-duo-ge-app-jin-xing-guan-li-shi-de-zhu-yi-dian/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="pip升级可能出现的问题">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="django中多个app进行管理时的注意点">
                         
-                        <span class="card-title">pip升级可能出现的问题</span>
+                        <span class="card-title">django中多个app进行管理时的注意点</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Traceback (most recent call last):
- File “/usr/local/bin/pip”, line 7, in     from pip import mainImportError: cannot im
+                            在使用Django开发项目时，由于app会有很多，这样看起来会让项目显得杂乱无章，这时我们可以创建一个apps文件夹将所有的app管理起来，但此时这个地方就会报错
+
+原因是在你把app放在一个文件夹下后，include无法通过users.u
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-12-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-12-15
                             </span>
                         <span class="publish-author">
                             
